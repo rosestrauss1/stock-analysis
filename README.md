@@ -40,7 +40,7 @@ To find the ending price, I used a similar process:
 
 This utilized an if then statement within a for loop to loop through all the rows of data and find the ending price. In both cases, the if then statement evaluted whether the cell before or after matched the ticker cell value, and if it did not, it was evaluated as either a starting or ending price.
 
-In the refactored code, the main difference was that instead of looping over all data in the data set, I used an index value called tickerIndex which allowed me to iterate through the data with volumes, starting prices, and ending prices already set.
+In the refactored code, the main difference was that instead of looping over all data in the data set, I used an index value called tickerIndex which allowed me to iterate through the data faster. This was because instead of looping through each entire row to find starting price, ending price, and volume, I was able to move past rows that did not have the starting or ending values for the ticker.
 
 ## Summary
 
