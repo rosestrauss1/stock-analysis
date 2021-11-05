@@ -33,16 +33,14 @@ To find the starting price, the code I used was:
 If Cells(j - 1, 1).Value <> ticker And Cells(j, 1).Value = ticker Then
         startingPrice = Cells(j, 6).Value
 
-This utilized an if then statement to find if the ticker value was 
-
 To find the ending price, I used a similar process: 
 
  If Cells(j + 1, 1).Value <> ticker And Cells(j, 1).Value = ticker Then
         endingPrice = Cells(j, 6).Value
 
-This also used an if then statement to 
+This utilized an if then statement within a for loop to loop through all the rows of data and find the ending price. In both cases, the if then statement evaluted whether the cell before or after matched the ticker cell value, and if it did not, it was evaluated as either a starting or ending price.
 
-In the refactored code, the main difference was that instead of looping over all data in the data set, I checked to see if the current row was the first or last row of a ticker index. This made it so I only had to loop through the data one time, because I was able to obtain the starting and ending price without iterating through the data.
+In the refactored code, the main difference was that instead of looping over all data in the data set, I used an index value called tickerIndex which allowed me to iterate through the data with volumes, starting prices, and ending prices already set.
 
 ## Summary
 
