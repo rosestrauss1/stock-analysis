@@ -47,3 +47,4 @@ In the refactored code, the main difference was that instead of looping over all
 ## Summary
 
 ### Advantages and Disadvantages of Refactored Code
+Refactoring the code made the VBA script run considerably faster than it did with the original code. For 2018, the regular script ran at a time of 0.67 seconds compared to 0.12 seconds. In 2017, the original script ran at 0.64 seconds and the refactored code ran at 0.12 seconds. The benefits of this is that the code is more efficient and could be easier for some people to understand. In my opinion, this efficiency would be a larger factor to consider if the script took a longer time to run, but because this script ran quickly, to me it was not worth refactoring the code because it took a very long time.
