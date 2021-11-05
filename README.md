@@ -10,6 +10,8 @@ The purpose of this project is to use VBA to refactor code that uses for loops t
 
 ### Comparison of Stock Performance Between 2017 and 2018
 
+The stock performance in 2017 was worse than it was in 2018. This can be determined from the data because in 2017, most of the tickers had a negative return. However, in 2018, 
+
 ### Comparison of Original Script and Refactored Script
 
 ## Summary
